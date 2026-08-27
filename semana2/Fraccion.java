@@ -26,4 +26,9 @@ class Fraccion{
 	public String toString(){
 		return this.a+"/"+this.b;
 	}
+
+	public boolean equals(Fraccion f){
+
+		return this.a==f.a && this.b == f.b;
+	}
 }
