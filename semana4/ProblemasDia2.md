@@ -70,7 +70,7 @@ Escriba un programa en Java que reciba una cadena y elimine parejas de caractere
 
 Cada vez que dos caracteres iguales quedan juntos, ambos deben eliminarse. Este proceso debe continuar hasta que no sea posible realizar más eliminaciones.
 
-Para resolver el problema debe utilizar obligatoriamente una pila implementada mediante una lista enlazada, correspondiente a la clase `PilaLista`.
+Para resolver el problema debe utilizar obligatoriamente una pila implementada mediante la clase `PilaArreglo`.
 
 ### Ejemplo 1
 
@@ -108,7 +108,7 @@ Para cada carácter de la cadena:
 - Si son diferentes, apile el nuevo carácter.
 - Al finalizar, muestre los caracteres restantes en su orden original.
 
-Puede utilizar una segunda `PilaLista` para invertir el contenido antes de mostrar el resultado.
+Puede utilizar una segunda `PilaArreglo` para invertir el contenido antes de mostrar el resultado.
 
 No se permite utilizar `Stack`, `Deque`, `LinkedList` ni métodos destinados a eliminar directamente los caracteres de la cadena.
 
@@ -120,7 +120,7 @@ import java.util.Scanner;
 public class CancelarCaracteres {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        PilaLista pila = new PilaLista();
+        PilaArreglo pila = new PilaArreglo();
 
         System.out.print("Ingrese una cadena: ");
         String cadena = teclado.nextLine();
